@@ -8,5 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	let button2 = document.getElementById("ar") 
 	button2.addEventListener("click", function() {
 		alert("Now redirecting to: Augmented Reality Model Viewer.\nPlease Stand by...");
+		location.href = "pages/arViewer.html";
 	})	
 })
