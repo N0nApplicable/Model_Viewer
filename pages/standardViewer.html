@@ -20,12 +20,16 @@
 				<a-asset-item id="harley-obj" source="models/CurvyHQ/CurvyHQ.obj"></a-asset-item>
 				<a-asset-item id="harley-mtl" source="models/CurvyHQ/CurvyHQ.mtl"></a-asset-item>
 			</a-assets>-->
-			<a-entity obj-model="
+			<!--<a-entity obj-model="
 				obj: url(https://N0nApplicable.github.io/Model_Viewer/models/CurvyHQ/CurvyHQ.obj);
 				mtl: url(models/CurvyHQ/CurvyHQ.mtl)" 
 				position="0 0.4 -1" 
 				scale="0.7 0.7 0.7">
-			</a-entity>
+			</a-entity>-->
+			<a-assets>
+				<a-asset-item id="hq" src="models/CurvyHQ/CurvyHQ.gltf"></a-asset-item>
+			</a-assets>
+			<a-entity gltf-model="#hq"></a-entity>
 			<a-sky color="lightblue"></a-sky>
 		</a-scene>
 	</div>
