@@ -16,14 +16,17 @@
 	<body style="margin: 0px; overflow: hidden;">
 		<a-scene class="arViewer" embedded arjs>
 			<a-marker preset="hiro">
-				<a-box position="0 0.5 0" material="color: red;">
-					<a-animation attribute="rotation
-						dir="3000"
-						to="360 360 0"
-						repeat="indefinite"
-						easing="linear">
-					</a-animation>
-				</a-box>
+				<a-assets>
+					<a-asset-item id="harley-obj" source="models/CurvyHQ/CurvyHQ.obj"></a-asset-item>
+					<a-asset-item id="harley-mtl" source="models/CurvyHQ/CurvyHQ.mtl"></a-asset-item>
+				</a-assets>
+				<a-sky color="lightblue"></a-sky>
+				<a-entity obj-model="
+					obj: url(https://N0nApplicable.github.io/Model_Viewer/models/CurvyHQ/CurvyHQ.obj);
+					mtl: url(models/CurvyHQ/CurvyHQ.mtl)" 
+					position="0 0.4 -1" 
+					scale="0.7 0.7 0.7">
+				</a-entity>
 			</a-marker>
 			<a-entity camera></a-entity>
 		</a-scene>
