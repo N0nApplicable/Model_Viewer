@@ -5,6 +5,7 @@
 		<title>AR Model Viewer</title>
 		<script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
 		<script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+		<script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
 	</head>
 
 	<body style="margin: 0px; overflow: hidden;">
@@ -23,7 +24,9 @@
 					mtl: url(https://N0nApplicable.github.io/Model_Viewer/models/CurvyHQ/CurvyHQ.mtl)" 
 					rotation="-90 0 0"
 					position="0 1 0" 
-					scale="1 1 1">
+					scale="1 1 1"
+					class="clickable"
+					gesture-handler>
 				</a-entity>
 			</a-marker>
 			<a-entity camera></a-entity>
