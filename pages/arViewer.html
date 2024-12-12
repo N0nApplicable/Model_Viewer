@@ -14,17 +14,12 @@
 			renderer="logarithmicDepthBuffer: true"
 			xr-mode-ui="enabled: false"
 			gesture-detector>
-			<a-assets>
-				<a-asset-item id="harley-obj" source="models/CurvyHQ/CurvyHQ.obj"></a-asset-item>
-				<a-asset-item id="harley-mtl" source="models/CurvyHQ/CurvyHQ.mtl"></a-asset-item>
-			</a-assets>
 			<a-marker preset="hiro">
-				<a-entity obj-model="
-					obj: url(https://N0nApplicable.github.io/Model_Viewer/models/CurvyHQ/CurvyHQ.obj);
-					mtl: url(https://N0nApplicable.github.io/Model_Viewer/models/CurvyHQ/CurvyHQ.mtl)" 
+				<a-entity 
+					gltf-model="models/SJ10-Ballora/scene.gltf"
 					rotation="-90 0 0"
-					position="0 1 0" 
-					scale="1 1 1"
+					position="0 -2 0" 
+					scale="0.7 0.7 0.7"
 					class="clickable"
 					gesture-handler>
 				</a-entity>
