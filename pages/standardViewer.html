@@ -17,8 +17,11 @@
 	<h1 style="text-align: center">Standard Model Viewer</h1>
 	<div>
 		<a-scene class="aframebox" embedded>
+			<a-assets>
+				<a-asset-item id="scene" src="scene.gltf"></a-asset-item>
+			</a-assets>
+			<a-entity gltf-model="#scene" position="0 0.5 3"></a-entity>
 			<a-sky color="lightblue"></a-sky>
-			<a-box color="red" position="0 0.5 2" rotation="0 45 0"></a-box>
 		</a-scene>
 	</div>
 </body>
