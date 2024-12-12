@@ -8,7 +8,11 @@
 	</head>
 
 	<body style="margin: 0px; overflow: hidden;">
-		<a-scene embedded arjs='sourceType: webcam'>
+		<a-scene 
+			embedded arjs='sourceType: webcam'
+			renderer="logarithmicDepthBuffer: true"
+			xr-mode-ui="enabled: false"
+			gesture-detector>
 			<a-assets>
 				<a-asset-item id="harley-obj" source="models/CurvyHQ/CurvyHQ.obj"></a-asset-item>
 				<a-asset-item id="harley-mtl" source="models/CurvyHQ/CurvyHQ.mtl"></a-asset-item>
@@ -17,9 +21,9 @@
 				<a-entity obj-model="
 					obj: url(https://N0nApplicable.github.io/Model_Viewer/models/CurvyHQ/CurvyHQ.obj);
 					mtl: url(https://N0nApplicable.github.io/Model_Viewer/models/CurvyHQ/CurvyHQ.mtl)" 
+					rotation="-90 0 0"
 					position="0 1 0" 
-					scale="1 1 1"
-					rotation="-90 0 0">
+					scale="1 1 1">
 				</a-entity>
 			</a-marker>
 			<a-entity camera></a-entity>
